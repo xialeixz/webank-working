@@ -1,0 +1,2 @@
+//com.springsource.sts.config.flow.coordinates\:http\://www.springframework.org/schema/batch\:/webank-working-test-springbatch/resources/spring-config.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<graph>\r\n<element clazz\="JobModelElement" type\="job">\r\n<structure end\="2460" endstart\="2448" start\="2333" startend\="2360"/>\r\n<bounds height\="118" width\="125" x\="15" y\="17"/>\r\n</element>\r\n</graph>
+eclipse.preferences.version=1
