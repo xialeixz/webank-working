@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	
+	<!-- xmlns和xmlns:xsi是标准抬头，基本命名空间 -->
+	<!-- xmlns:p,xmlns:aop都是功能性抬头，对应每个功能的命名空间 -->
+	<!-- xsi:schemaLocation是对应每个命名的xsd文件地址，就是xml格式规范 -->
+	
+</beans>

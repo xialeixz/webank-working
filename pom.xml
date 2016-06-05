@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.webank.learn</groupId>
-  <artifactId>webank-working-test</artifactId>
+  <artifactId>webank-working</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <packaging>pom</packaging>
-  <name>webank-working-test</name>
+  <name>webank-working</name>
   <modules>
-  	<module>webank-working-test-springbatch</module>
+  	<module>webank-working-springbatch</module>
   </modules>
 
   <properties>
@@ -48,6 +48,11 @@
 		<artifactId>spring-batch-test</artifactId>
 		<version>${spring.batch.version}</version>
 		<scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.30</version>
 	</dependency>
   </dependencies>
 </project>
