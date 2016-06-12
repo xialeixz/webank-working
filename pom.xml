@@ -10,6 +10,8 @@
   <name>webank-working</name>
   <modules>
   	<module>webank-working-springbatch</module>
+  	<module>thinkingInJava</module>
+  	<module>webank-working-thinking-in-java</module>
   </modules>
 
   <properties>
