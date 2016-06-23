@@ -1,0 +1,1 @@
+2016-06-23:添加log4j，去除sysout，参考：http://www.codeceo.com/article/log4j-usage.html

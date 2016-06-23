@@ -2,6 +2,7 @@ package org.webank.working.thinking.enums;
 
 import java.util.Random;
 
+import org.apache.log4j.Logger;
 import org.webank.working.thinking.tools.OutputUtils;
 
 enum Signal
@@ -14,6 +15,8 @@ public class SwitchEnum
 	private Signal signal;
 
 	private Random random = new Random();
+	
+	private static Logger logger = Logger.getLogger(SwitchEnum.class);
 
 	public void change()
 	{
@@ -50,8 +53,11 @@ public class SwitchEnum
 		SwitchEnum switchEnum = new SwitchEnum();
 		for (int i = 0; i < 7; i++)
 		{
-			switchEnum.change();
-			OutputUtils.print(switchEnum.toString());
+			//switchEnum.change();
+			logger.debug("hello debug");
+			logger.info("hello info");
+			logger.error("hello error");
+			//OutputUtils.print(switchEnum.toString());
 		}
 	}
 }
