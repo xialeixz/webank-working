@@ -12,6 +12,7 @@
   	<module>webank-working-springbatch</module>
   	<module>thinkingInJava</module>
   	<module>webank-working-thinking-in-java</module>
+  	<module>webank-working-routine-test</module>
   </modules>
 
   <properties>
@@ -25,7 +26,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
-      <scope>test</scope>
     </dependency>
     
     <dependency>
