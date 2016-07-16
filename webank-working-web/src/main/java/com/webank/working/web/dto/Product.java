@@ -1,5 +1,7 @@
 package com.webank.working.web.dto;
 
+import org.slf4j.helpers.MessageFormatter;
+
 public class Product
 {
 	private Integer id;
@@ -45,5 +47,14 @@ public class Product
 	public void setQuantity(Integer quantity)
 	{
 		this.quantity = quantity;
+	}
+	
+	public String info(String format, Object... argArray) {
+		return MessageFormatter.arrayFormat(format, argArray).getMessage();
+    }
+	
+	@Override
+	public String toString(){
+		return info("{}-{}-{}", this.name, this.description, this.quantity);
 	}
 }

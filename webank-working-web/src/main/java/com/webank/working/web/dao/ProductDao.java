@@ -6,5 +6,5 @@ public interface ProductDao
 {
 	public void insert(Product product);
 
-	public Product getProductById();
+	public Product getProductById(int id);
 }

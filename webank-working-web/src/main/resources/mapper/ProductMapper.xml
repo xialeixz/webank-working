@@ -15,12 +15,12 @@
   	</sql>
 
     <insert id="insert" parameterType="Product" useGeneratedKeys="true" keyColumn="id">  
-       insert into product (NAME, DESCRIPTION, QUANTITY) values(#{NAME}, #{DESCRIPTION}, #{QUANTITY})  
+       insert into product (NAME, DESCRIPTION, QUANTITY) values(#{name}, #{description}, #{quantity})  
     </insert>  
      
-    <select id="getProductById" parameterType="int">  
+    <select id="getProductById" parameterType="int" resultType="Product">  
        select 
        <include refid="Base_Column_List"/>
-       from product where ID = #{ID}
+       from product where ID = #{id}
     </select>
 </mapper>  

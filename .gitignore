@@ -1,1 +1,7 @@
-/target .gitignore .classpath
+*.class
+*.settings
+*target
+*.project
+*.classpath
+*/.gitignore
+*.gitignore
