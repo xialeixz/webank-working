@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.webank.working.web.dao.ProductDao;
 import com.webank.working.web.dto.Product;
+import com.webank.working.web.service.DemoService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations =
@@ -22,7 +23,7 @@ public class TestProductDao
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Autowired
-	private ProductDao dao;
+	private DemoService demoService;
 
 	@Test
 	public void insert()
@@ -32,12 +33,18 @@ public class TestProductDao
 		product.setDescription("我的爱");
 		product.setQuantity(21);
 
-		dao.insert(product);
 	}
 	
 	@Test
 	public void select(){
-		Product product = dao.getProductById(1);
+		Product product = new Product();
+		product.setName("呵呵1");
+		product.setDescription("我的爱");
+		product.setQuantity(21);
+		
+		demoService.add(product);
+		
+		product = demoService.selectProductById(product.getId());
 		System.out.println(product);
 	}
 }

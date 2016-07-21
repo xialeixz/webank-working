@@ -14,7 +14,7 @@
          ID, NAME, DESCRIPTION, QUANTITY
   	</sql>
 
-    <insert id="insert" parameterType="Product" useGeneratedKeys="true" keyColumn="id">  
+    <insert id="insert" parameterType="Product" useGeneratedKeys="true" keyProperty="id">  
        insert into product (NAME, DESCRIPTION, QUANTITY) values(#{name}, #{description}, #{quantity})  
     </insert>  
      
