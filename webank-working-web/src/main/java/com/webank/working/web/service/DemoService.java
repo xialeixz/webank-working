@@ -22,4 +22,12 @@ public class DemoService {
 	public Product selectProductById(int id){
 		return productDao.getProductById(id);
 	}
+	
+	public Product lockProduct(int id){
+		return productDao.lockProduct(id);
+	}
+	
+	public int updateProduct(Product record){
+		return productDao.updateByPrimaryKeySelective(record);
+	}
 }

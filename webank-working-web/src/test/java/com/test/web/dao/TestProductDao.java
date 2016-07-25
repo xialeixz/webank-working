@@ -26,13 +26,23 @@ public class TestProductDao
 	private DemoService demoService;
 
 	@Test
+	public void lock(){
+		
+		Product product = demoService.lockProduct(1);
+		product.setQuantity(product.getQuantity() + 1);
+		demoService.updateProduct(product);
+		
+		product = demoService.selectProductById(1);
+		logger.info("{}", product);
+	}
+	
+	@Test
 	public void insert()
 	{
 		Product product = new Product();
 		product.setName("呵呵1");
 		product.setDescription("我的爱");
 		product.setQuantity(21);
-
 	}
 	
 	@Test
