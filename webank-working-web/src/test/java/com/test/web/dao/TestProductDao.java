@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.webank.working.web.dao.ProductDao;
 import com.webank.working.web.dto.Product;
-import com.webank.working.web.service.DemoService;
+import com.webank.working.web.service.ProductService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations =
@@ -23,7 +23,7 @@ public class TestProductDao
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Autowired
-	private DemoService demoService;
+	private ProductService demoService;
 
 	@Test
 	public void lock(){

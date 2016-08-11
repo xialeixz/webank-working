@@ -8,7 +8,7 @@ import com.webank.working.web.dao.ProductDao;
 import com.webank.working.web.dto.Product;
 
 @Service
-public class DemoService {
+public class ProductService {
 
 	@Autowired
 	private ProductDao productDao;
