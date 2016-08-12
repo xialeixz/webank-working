@@ -14,6 +14,7 @@
   	<module>webank-working-thinking-in-java</module>
   	<module>webank-working-routine-test</module>
     <module>webank-working-web</module>
+    <module>webank-working-inner-server</module>
   </modules>
 
   <properties>
