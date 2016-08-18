@@ -16,6 +16,8 @@ public class LogTester {
 		logger.debug("this is debug msg : {}", 2);
 		
 		//hehe
+		
+		//bababab
 	}
 	
 }
