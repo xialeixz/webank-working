@@ -14,6 +14,8 @@ public class LogTester {
 		logger.info("this is info msg : {}", 1);
 		logger.error("this is error msg : {}", 2);
 		logger.debug("this is debug msg : {}", 2);
+		
+		//hehe
 	}
 	
 }
